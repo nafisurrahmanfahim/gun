@@ -65,7 +65,7 @@
     right: 0;
     background: #8A0D13;
     transition: .5s;
-    z-index: -1;
+    z-index: -1;                         
 }
 
 .button a:hover::after {

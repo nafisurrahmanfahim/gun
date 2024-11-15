@@ -6,7 +6,7 @@ const Boxing = () => {
   return (
     <section id="boxing">
       <Container>
-        <div className="boxs">
+        {/* <div className="boxs">
           <div className="cardbox">
             <div className="text">
               <h4>TOP NOTCH</h4>
@@ -17,7 +17,7 @@ const Boxing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
