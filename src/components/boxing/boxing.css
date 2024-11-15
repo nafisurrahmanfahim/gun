@@ -1,0 +1,34 @@
+#boxing {
+    padding: 200px 0;
+    background: url(../../assets/oo.webp) no-repeat center / cover;
+}
+
+
+.boxs {
+    display: flex;
+    justify-content: center;
+}
+.cardbox {
+    width: 42rem;
+    height: 20rem;
+    background: #00000097;
+    text-align: center;
+    color: #fff;
+}
+
+.text {
+    padding-top: 60px;
+}
+
+.buttons {
+    padding-top: 15px;
+}
+
+.buttons a {
+    background: #D80032;
+    text-decoration: none;
+    padding: 10px 18px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
