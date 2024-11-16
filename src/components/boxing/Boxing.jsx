@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./boxing.css";
 import boxing1 from "../../assets/oo.webp"
-import boximg2 from "../../assets/src/assets/box 2.jpg"
 import Slider from "react-slick";
+import slider2 from "../../assets/box 2.jpg"
 
 const Boxing = () => {
 
@@ -20,7 +20,7 @@ const Boxing = () => {
       <Container>
         <Slider {...settings}>
           <div className="images">
-            <img src={boximg2} alt="" />
+            <img src={slider2} alt="" />
           </div>
 
           <div className="images">
