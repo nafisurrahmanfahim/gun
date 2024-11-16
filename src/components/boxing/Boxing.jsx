@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import "./boxing.css";
 import boxing1 from "../../assets/oo.webp"
 import Slider from "react-slick";
-import slider2 from "../../assets/box 2.jpg"
+import slider2 from "../../assets/slider 1.avif"
 
 const Boxing = () => {
 
