@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
 import "./product.css"
 import Akm from "../../assets/gun5.jpg"
@@ -8,6 +8,19 @@ import gun4 from "../../assets/gun6.jpg"
 import Productreusable from '../reusable/Productreusable'
 
 const Product = () => {
+
+    // let more = "See More"
+    
+    
+    let [show, setShow] = useState(false)
+    let handleMore = () => {
+        setShow(!show)
+        { more }
+    }
+    
+
+    // let [more,setMore] = useState("See More");
+  
     return (
         <section id="product">
             <Container>
@@ -24,14 +37,22 @@ const Product = () => {
                 <Row>
                     <Col lg={12}>
                         <Row>
-                            <Productreusable img={Akm} delprice="$969.99" price="$749.99"/>
-                            <Productreusable img={gun2} delprice="$323.99" price="$289.99"/>
-                            <Productreusable img={gun3} price="$430.29"/>
-                            <Productreusable img={gun4} price="$6424.99"/>
-                            <Productreusable img={gun4} price="$6424.99"/>
-                            <Productreusable img={gun4} price="$6424.99"/>
-                            <Productreusable img={gun4} price="$6424.99"/>
-                            <Productreusable img={gun4} price="$6424.99"/>
+                            <Productreusable img={Akm} delprice="$969.99" price="$749.99" />
+                            <Productreusable img={gun2} delprice="$323.99" price="$289.99" />
+                            <Productreusable img={gun3} price="$430.29" />
+                            <Productreusable img={gun4} price="$6424.99" />
+
+                            {show && <>
+                                <Productreusable img={gun4} price="$6424.99" />
+                                <Productreusable img={gun4} price="$6424.99" />
+                                <Productreusable img={gun4} price="$6424.99" />
+                                <Productreusable img={gun4} price="$6424.99" />
+                            </>
+                            }
+                            <div className="more">
+                                <a onClick={handleMore}> See more </a>
+                            </div>
+
                         </Row>
                     </Col>
                 </Row>
@@ -39,5 +60,5 @@ const Product = () => {
         </section>
     )
 }
-
+// {show == true ? "See less" : ""}
 export default Product
