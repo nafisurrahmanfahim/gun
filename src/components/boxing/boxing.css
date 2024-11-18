@@ -1,6 +1,6 @@
 #boxing {
     padding: 100px 0;
-    width: 70%;
+    width: 75%;
     margin: auto;
 }
 
@@ -95,3 +95,13 @@
     color: #fff !important;
 }
 
+@media (max-width: 576px) {
+    .images img {
+        height: 13rem;
+    }
+
+    #boxing {
+        width: 100%;
+    }
+    
+}
